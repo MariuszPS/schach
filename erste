@@ -1,0 +1,34 @@
+#include <iostream>
+
+char hell = 219;
+char dunkel = 32;
+int ausdehnung = 8;
+int zeile;
+int spalte;
+int num = 9;
+//char ascii = 65;
+using namespace std;
+
+int main() 
+{
+	cout<< " ABCDEFGH" << endl;
+	for (int zeile = 0; zeile < ausdehnung; zeile++) 
+	{
+		num--;
+		cout << num;
+		for (spalte = 0; spalte < ausdehnung; spalte++) 
+		{
+			
+			if ((spalte + zeile) % 2 == 0)
+				std::cout << hell;
+			else
+				std::cout << dunkel ;
+
+			
+		}
+		cout << num << endl;
+	}
+	cout << " ABCDEFGH " << endl;
+	return 0;
+}
+
